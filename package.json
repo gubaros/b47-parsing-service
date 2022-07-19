@@ -1,0 +1,31 @@
+{
+  "name": "b47-email-parse",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "address-rfc2822": "^2.1.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.1",
+    "express": "~4.16.1",
+    "mailparser": "^3.5.0",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.19",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.20.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.0",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.1",
+    "sequelize-cli": "^6.4.1",
+    "ts-node": "^10.9.1"
+  }
+}
