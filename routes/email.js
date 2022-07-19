@@ -5,15 +5,16 @@ const { simpleParser } = require('mailparser');
 
 /* Bravo47 middleware */
 const business = require('../business');
-const validator = require('../validator');
-
-console.log(validator);
+const Validator = require('../validator');
 
 /* GET Email */
 router.get('/', (req, res) => {
   const { body } = req.body;
   const { messageId } = req.body;
   const { recordId } = req.body;
+
+  const validId = new Validator(recordId);
+  console.log(validId.checkId());
 
   /* eslint no-console: ["error", { allow: ["warn", "error"] }] */
   const source = body;
