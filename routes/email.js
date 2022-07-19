@@ -4,7 +4,7 @@ const router = express.Router();
 const { simpleParser } = require('mailparser');
 
 /* Bravo47 middleware */
-const business = require('../business');
+const business = require('../business/email');
 const Validator = require('../validator');
 
 /* GET Email */
