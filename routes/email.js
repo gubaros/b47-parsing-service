@@ -2,13 +2,20 @@ const express = require('express');
 
 const router = express.Router();
 const { simpleParser } = require('mailparser');
+
+/* Bravo47 middleware */
 const business = require('../business');
+const validator = require('../validator');
+
+console.log(validator);
 
 /* GET Email */
 router.get('/', (req, res) => {
   const { body } = req.body;
+  const { messageId } = req.body;
+  const { recordId } = req.body;
+
   /* eslint no-console: ["error", { allow: ["warn", "error"] }] */
-  console.log(body);
   const source = body;
   const options = {};
 
