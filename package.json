@@ -4,7 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "nodemon",
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "lint": "./node_modules/.bin/eslint .",
+    "lint-fix": "./node_modules/.bin/eslint . --fix",
+    "test": "./node_modules/mocha/bin/mocha.js",
+    "prepare": "husky install"
   },
   "dependencies": {
     "address-rfc2822": "^2.1.0",
@@ -20,6 +24,7 @@
   "devDependencies": {
     "eslint": "^8.20.0",
     "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.0",
     "eslint-plugin-react": "^7.30.1",
